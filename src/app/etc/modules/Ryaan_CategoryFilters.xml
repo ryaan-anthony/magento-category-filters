@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Ryaan_CategoryFilters>
+            <active>true</active>
+            <codePool>community</codePool>
+        </Ryaan_CategoryFilters>
+    </modules>
+</config>
