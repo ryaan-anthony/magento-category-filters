@@ -13,8 +13,9 @@ trait Ryaan_CategoryFilters_Model_TLayer
         $collection->addIsFilterableFilter();
 
         $filters = $this->getCurrentCategory()->getFilters();
+        $filters = preg_split('/,/', $filters, null, PREG_SPLIT_NO_EMPTY);
 
-        if ($filters) {
+        if (!empty($filters)) {
 
             $collection->addFieldToFilter('attribute_code', ['in' => $filters]);
 
